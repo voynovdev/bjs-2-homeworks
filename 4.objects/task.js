@@ -19,12 +19,11 @@ Student.prototype.getAverage = function() {
 	let summ = 0;
 	if (this.marks == undefined || this.marks.length == 0) {
 		return 0
-	} else {
-		for (let i = 0; i < this.marks.length; i++) {
-			summ += this.marks[i];
-		}
-		return summ / this.marks.length
+	} 
+	for (let i = 0; i < this.marks.length; i++) {
+		summ += this.marks[i];
 	}
+	return summ / this.marks.length
 }
 
 Student.prototype.exclude = function(reason) {
